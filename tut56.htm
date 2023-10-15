@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <ul id="nav">
+            <li>home</li>
+            <li>about</li>
+            <li>us</li>
+            <li>contact</li>
+            <li>you are great</li>
+        </ul>
+        <div class="container">
+            jethewqopa
+        </div>
+    </div>
+
+    <script>
+        let main = document.getElementById('main');
+        console.log(main) 
+
+        let va = document.getElementById('nav');
+        console.log(va)
+        
+        let container = document.getElementsByClassName('container');
+        console.log(container)
+
+        
+        let selector = document.querySelector('#nav>li') //will return the first container with class
+        console.log(selector)
+        let selec = document.querySelectorAll('#nav>li') //will return all the container with class
+        console.log(selec)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script settimeout adn cleartimeout</title>
+</head>
+
+<body>
+    <div class="caintainaer" >
+        thisisi teh vonkl
+
+    </div>
+    this is time <span id="time"></span>
+    <script>
+        function great(name, another) {
+            console.log("hellogood morning  " + name + "" + another)
+
+        }
+        // TimeOut = setTimeout(great, 1000, "akhilesh", "hello");
+        // console.log(TimeOut)
+        // clearTimeout(TimeOut) //cleartimeout is use to cancle out function if the user is already done that login or other stupp
+
+        // intervalId =   setInterval(great, 1000 ,"akhilesh","oya ");
+        // clearInterval(intervalId)
+
+        function displayTime(){
+            time = new Date()
+            console.log(time)
+            document.getElementById('time').innerHTML = time;
+        }
+            setInterval(displayTime, 1000);
+    </script>
+</body>
+
+</html>

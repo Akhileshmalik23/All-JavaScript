@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>browser events</title>
+</head>
+<body>
+    <div class="container" id="para">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit quam ducimus, nobis delectus id aspernatur neque nulla illo itaque, magnam debitis qui quod distinctio expedita placeat quas corrupti provident consequatur, voluptates aut quisquam soluta blanditiis enim! Magni laboriosam ducimus expedita quo soluta eligendi enim iusto adipisci, quam earum iste, ipsa sunt, ea autem minima. ipsum dolor sit, amet consectetur adipisicing elit. Maxime laboriosam, consectetur nihil iste delectus recusandae, sint rerum vero minus quasi at? Dolores corporis commodi neque molestias, quia error adipisci minus?
+    </div>
+    <button id="btn" onclick="toggleheight()">
+        show . hide
+    </button>
+
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseaver', function run(){
+            console.log('lakjfoai')
+        });
+        para.addEventListener('mouseinside', function run(){
+            console.log('lakjfoafdsafi')
+        });
+
+
+
+
+        function toggleheight(){
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+
+            if(para.style.display !='none'){
+                para.style.display='none'
+
+            }
+            else{
+
+                para.style.display='block'
+            }
+        }
+    </script>
+</body>
+</html>
